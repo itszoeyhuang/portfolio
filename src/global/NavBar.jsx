@@ -1,5 +1,5 @@
 import { Link } from 'react-router'
-import Logo from '../global/logo-v1-vanilla.png'
+
 import '../global/NavBar.css'
 
 export default function NavBar(){
@@ -9,14 +9,14 @@ export default function NavBar(){
                 <div className="grid">
                     <div className="col-3">
                         <Link to="/" >
-                            <img src={Logo} alt="Home Logo" ></img>
+                            Logo Here
                         </Link>
                     </div>
                     <div className="col-9">
                         <ul>
-                            <Link to="/about" >About</Link>
-                            <Link to="/work" >Work</Link>
-                            <Link to="/contact" >Contact</Link>
+                            <Link to="/about" >about</Link>
+                            <Link to="/work" >work</Link>
+                            <Link to="/contact" >contact</Link>
                         </ul>
                     </div>
                 </div>

@@ -9,8 +9,10 @@ export default function Home(){
        <>
        <NavBar />
        <main className="home">
-        <h1>This is Home Page</h1>
-        </main>
+        <div className="hero-section">
+            <h1>Hi! I'm Zoey!</h1>
+        </div>
+       </main>
        <Footer />
        </>
     )
