@@ -1,6 +1,8 @@
+import { Routes, Route} from 'react-router'
 import Home from "./pages/Home"
-import NavBar from "./global/NavBar"
-import Footer from "./global/Footer"
+import About from './pages/About'
+import Work from './pages/Work'
+import Contact from './pages/Contact'
 
 function App() {
 
@@ -9,7 +11,12 @@ function App() {
   // HTML
   return (
     <>
-    <Home />
+    <Routes>
+      <Route path="/" element={(<Home />)} />
+      <Route path="/about" element={(<About />)} />
+      <Route path="/work" element={(<Work />)} />
+      <Route path="/contact" element={(<Contact />)} />
+    </Routes>
     </>
   )
 }
