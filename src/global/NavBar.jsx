@@ -7,9 +7,12 @@ export default function NavBar(){
         <header className='site-header'>
             <div className="container">
                 <div className="grid">
-                    <div className="col-3">
-                        <Link to="/" >
-                            Logo Here
+                    <div className="col-3" id="home-logos" >
+                        <Link to="/">
+                            <img src="../public/logo-v1-vanilla.png" alt="Home Logo" />
+                        </Link>
+                        <Link to="/">
+                            <img src="../src/images/itszoeyhuang.png" alt="Home Logo" />
                         </Link>
                     </div>
                     <div className="col-9">

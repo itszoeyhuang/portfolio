@@ -15,3 +15,9 @@ body{
     gap: 2.5rem;
     justify-content: end;
 }
+
+#home-logos{
+    display: flex;
+    align-content: space-between;
+    gap: 0.4rem;
+}
