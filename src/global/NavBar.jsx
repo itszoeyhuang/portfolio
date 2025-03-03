@@ -1,5 +1,4 @@
 import { Link } from 'react-router'
-import { Classic } from "@theme-toggles/react"
 
 import '../global/NavBar.css'
 
@@ -23,7 +22,6 @@ export default function NavBar(){
                             <Link to="/contact" >contact</Link>
                         </ul>
                     </div>
-                    <Classic duration={750} />
                 </div>
             </div>
         </header>

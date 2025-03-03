@@ -12,11 +12,20 @@
     height: 20rem;
 }
 
-.intro-section p{
+/* #intro-section p{
     font-weight: 400;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     padding: 0 1rem;
+} */
+
+.project-section h1{
+
+}
+
+.col-12{
+    display: flex;
+    grid-column: span 12;
 }
