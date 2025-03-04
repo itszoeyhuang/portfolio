@@ -1,4 +1,4 @@
-import NavBar from "../global/NavBar"
+import NavBar from "../global/Header"
 import Footer from "../global/Footer"
 
 export default function Work(){

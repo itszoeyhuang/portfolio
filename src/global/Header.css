@@ -8,8 +8,13 @@ body{
 
 .site-header{
     display: flex;
-    justify-content: center;
+    align-items: center;
     padding: 2rem 0;
+}
+
+.grid{
+    display: flex;
+    align-items: center;
 }
 
 .site-header ul{
@@ -20,6 +25,11 @@ body{
 
 #home-logos{
     display: flex;
-    align-content: space-between;
-    gap: 0.4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#z-logo{
+    width: 70%;
+    height: auto;
 }

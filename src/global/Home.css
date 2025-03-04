@@ -1,7 +1,3 @@
-.home{
-    background-color: #F33D22;
-}
-
 .hero-section{
     font-weight: 600;
     display: flex;
@@ -12,20 +8,34 @@
     height: 20rem;
 }
 
-/* #intro-section p{
-    font-weight: 400;
+.intro-section{
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    padding: 0 1rem;
-} */
-
-.project-section h1{
-
+    text-align: center;
 }
 
-.col-12{
+.section-main{
+    width: 100vh;
+}
+
+.text-intro{
+    max-width: 100%;
     display: flex;
-    grid-column: span 12;
+    justify-content: center;
+    display: block;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.line{
+    width: 100%;
+    display: flex;
+    align-content: space-between;
+}
+
+.line img{
+    width: 5rem;
+    height: auto;
 }
