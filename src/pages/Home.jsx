@@ -1,18 +1,24 @@
 import React from 'react'
 import { Link } from 'react-router'
 
-import Header from "../global/Header"
-import Footer from "../global/Footer"
-
 import '../global/Home.css'
 import '../main.css'
 
 export default function Home(){
     return(
        <>
-       <Header />
-       <main className="home">
-        <section className="hero-section">
+       <div className="container">
+        <div className="grid">
+            <div className="col-12" id="title">
+                <h2>Hi! I'm Zoey!</h2>
+            </div>
+            <div className="col-12" id="intro-content">
+                
+            </div>
+        </div>
+       </div>
+
+        {/* <section className="hero-section">
             <h2>Hi! I'm Zoey!</h2>
         </section>
         <section className="intro-section" id="intro-section" >
@@ -63,9 +69,7 @@ export default function Home(){
 
         <section className="project-section">
             <h1>PROJECTS</h1>
-        </section>
-       </main>
-       <Footer />
+        </section> */}
        </>
     )
 }

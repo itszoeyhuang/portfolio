@@ -6,8 +6,14 @@ import '../global/About.css'
 export default function About(){
     return(
         <>
-        <Header />
-        <header className="about">
+        <div className="container">
+            <div className="grid">
+                <div className="col-12">
+
+                </div>
+            </div>
+        </div>
+        {/* <header className="about">
             <div className="hero-header">
                 <h2>Hi! I'm Zoey!</h2>
             </div>
@@ -54,8 +60,7 @@ export default function About(){
                 </button>
                 <button className="resume">RESUME</button>
             </button>
-        </header>
-        <Footer />
+        </header> */}
         </>
     )
 }

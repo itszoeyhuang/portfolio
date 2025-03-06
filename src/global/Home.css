@@ -1,4 +1,15 @@
-.hero-section{
+#title{
+    grid-column-start: 5;
+    grid-column-end: six;
+    grid-row-start: 8;
+    grid-row-end: 10;
+}
+
+
+
+
+
+/* .hero-section{
     font-weight: 600;
     display: flex;
     justify-content: center;
@@ -38,4 +49,4 @@
 .line img{
     width: 5rem;
     height: auto;
-}
+} */

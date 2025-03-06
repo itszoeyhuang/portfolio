@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Send Footer to Bottom */
+html, body, #root{
+    min-height: 100vh;
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex-grow: 1;
+}
+
 /* Root Styles */
 body{
     font-family: "Montserrat", sans-serif;
@@ -13,7 +27,6 @@ body{
 }
 
 .grid{
-    display: flex;
     align-items: center;
 }
 

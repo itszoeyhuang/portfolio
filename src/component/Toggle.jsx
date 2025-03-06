@@ -29,12 +29,10 @@ const ThemeToggle = () => {
   
     return (
       <DarkModeSwitch
-        style={{ marginBottom: '2rem' }}
         checked={isDarkMode}
         onChange={toggleDarkMode}
         sunColor="#F6F2EC"
         moonColor="#F6F2EC"
-        
         size={25}
       />
     );
