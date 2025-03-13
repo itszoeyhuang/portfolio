@@ -1,52 +1,43 @@
 #title{
     grid-column-start: 5;
     grid-column-end: six;
-    grid-row-start: 8;
+    grid-row-start: 7;
     grid-row-end: 10;
+    align-items: center;
+}
+
+#mark2{
+    width: 20rem;
+    transform: scale(-1,1);
+}
+
+/* Hero Intro */
+.container-main{
+    grid-column-start: 2;
+    grid-column-end: five;
+}
+
+#hero-intro{
+    grid-column-start: 3;
+    grid-column-start: ten;
+    grid-row-start: 10;
+    grid-row-end: 5;
 }
 
 
-
-
-
-/* .hero-section{
-    font-weight: 600;
+/* Button - About Me */
+.btn{
+    background-color: #F6F2EC;
+    border-radius: 15px;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
-    width: auto;
-    height: 20rem;
+    width: 10rem;
+    height: 2rem;
 }
 
-.intro-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
+.btn-text{
+    color: #2E1E1B;
 }
 
-.section-main{
-    width: 100vh;
-}
 
-.text-intro{
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    display: block;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.line{
-    width: 100%;
-    display: flex;
-    align-content: space-between;
-}
-
-.line img{
-    width: 5rem;
-    height: auto;
-} */

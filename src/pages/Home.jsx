@@ -1,5 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router'
+import Line1 from '../assets/images/line-1.jpeg'
+import Line2 from '../assets/images/line-2.jpeg'
+import Line3 from '../assets/images/line-3.jpeg'
+import Line4 from '../assets/images/line-4.jpeg'
 
 import '../global/Home.css'
 import '../main.css'
@@ -10,66 +14,61 @@ export default function Home(){
        <div className="container">
         <div className="grid">
             <div className="col-12" id="title">
+                <h2 id='mark1' >“</h2>
                 <h2>Hi! I'm Zoey!</h2>
+                <h2 id='mark2' >“</h2>
             </div>
-            <div className="col-12" id="intro-content">
-                
-            </div>
-        </div>
-       </div>
+            <div className="container-main">
+                <div className="grid">
+                    <div className="col-12" id="hero-intro">
+                        <div className="v-gap">
+                            <div className="v-flex">
+                                {/* Line1 */}
+                                <div className="word">
+                                    <h4>A UX/UI Designer</h4>
+                                </div>
+                                <div className="word">
+                                    <h4>inspired by</h4>
+                                </div>
+                                <img src={ Line1 } alt='line-1-image' id='line-1-img' ></img>
+                                <h4>nature, and specialising</h4>
 
-        {/* <section className="hero-section">
-            <h2>Hi! I'm Zoey!</h2>
-        </section>
-        <section className="intro-section" id="intro-section" >
-            <div className="section-main">
-                <div className="text-intro">
-                    <div className="line" id="line-1" >
-                        <div>A UX/UI engineer</div>
-                        <div>inspired by</div>
-                        <div>
-                            <img src="../src/images/line-1.jpg" alt="Line 1 Image" width="100px" height="auto" />
+                                {/* Line2 */}
+                                <h4>in interactive design</h4>
+                                <img src={ Line2 } alt='line-2-image' id='line-2-img'></img>
+                                <h4>and</h4>
+                                <h4>user experience</h4>
+
+                                {/* Line3 */}
+                                <h4>I'm currently based in Vancouver.</h4>
+                                <img src={ Line3 } alt='line-3-image' id='line-3-img'></img>
+                                <h4>With a background in</h4>
+                                
+                                {/* Line4 */}
+                                <h4>fashion and marketing,</h4>
+                                <img src={ Line4 } alt='line-4-image' id='line-4-img'></img>
+
+                                {/* Line5 */}
+                                <div>I enjoy combining</div>
+                                <h4>high aesthetic</h4>
+                                <h4>and</h4>
+                                <h4>functionality</h4>
+                                <h4>to life.</h4>
+                            </div>
                         </div>
-                        <div>nature, and specialising</div>
-                    </div>
-                    <div className="line" id="line-2">
-                        <div>in interactive design</div>
-                        <div>
-                            <img src="../src/images/line-2.jpg" alt="Line 2 Image" width="100px" height="auto" />
-                        </div>
-                        <div>and</div>
-                        <div>user experience</div>
-                    </div>
-                    <div className="line" id="line-3">
-                        <div>I'm currently based in Vancouver</div>
-                        <div>
-                            <img src="../src/images/line-3.jpeg" alt="Line 3 Image" width="80px" height="60px" />
-                        </div>
-                        <div>With a background in</div>
-                    </div>
-                    <div className="line" id="line-4">
-                        <div>fashion and marketing,</div>
-                        <div>
-                            <img src="../src/images/line-4.jpg" alt="Line 4 Image" width="80px" height="60px" />
-                        </div>
-                    </div>
-                    <div className="line" id="line-5">
-                        <div>I enjoy combining</div>
-                        <div>high aesthetic</div>
-                        <div>and</div>
-                        <div>functionality</div>
-                        <div>to life.</div>
+                        <Link to='/about'>
+                            <div className="btn">
+                                <div className="btn-text">
+                                    <p>About Me</p>
+                                </div>
+                                <div className="btn-wrap"></div>
+                            </div>
+                        </Link>
                     </div>
                 </div>
             </div>
-            <button>
-                <Link to="/about" >About Me</Link>
-            </button>
-        </section>
-
-        <section className="project-section">
-            <h1>PROJECTS</h1>
-        </section> */}
+        </div>
+       </div>
        </>
     )
 }
