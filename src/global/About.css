@@ -1,0 +1,26 @@
+#left-part{
+    grid-column: 1 / 6;
+    align-self: flex-start;
+}
+
+.profile-pic{
+    width: 478px;
+    height: auto;
+    flex-shrink: 0;
+    opacity: 70% ;
+    border-radius: 10px;
+}
+
+/* Right - Introduction */
+#right-part{
+    grid-column: 7 / 13;
+}
+
+.content{
+    margin-top: 10px;
+}
+
+.about-btn{
+    display: flex;
+    gap: 10px;
+}

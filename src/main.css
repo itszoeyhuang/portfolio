@@ -13,8 +13,13 @@ h2, .h2 {
 h3 { font-size: 2.625rem 	}
 h4 { font-size: 2rem 	}
 h5 { font-size: 1.5rem 	}
-h6 { font-size: 1.25rem 	}
-p { font-size: 1rem 	}
+h6 { 
+  font-size: 1.25rem;
+  font-weight: 500; 	}
+p { 
+  font-size: 1rem;
+  font-weight: 400; 	
+}
 
 
 /* Root Styles */
@@ -106,7 +111,7 @@ p { font-size: 1rem 	}
 .light-mode{
   color: #F6F2EC;
   background-color: #F33D22;
-  filter: url(#nnnoise-filter);
+  background-image: url(../src//assets//images/grainy-light.png);
 }
 
 .light-mode a:hover{
@@ -118,11 +123,16 @@ p { font-size: 1rem 	}
   background-color: #f9f9f9;
 }
 
+.light-mode button a:hover{
+  color: #F33D22;
+  background-color: #f9f9f9;
+}
+
 /* Dark Mode */
 .dark-mode{
   color: #F6F2EC;
   background-color: #2E1E1B;
-  filter: url(#grainy-effect);
+  background-image: url(../src//assets//images/grainy-dark.png);
 }
 
 .dark-mode a:hover{
@@ -133,32 +143,3 @@ p { font-size: 1rem 	}
   color: #2E1E1B;
   background-color: #f9f9f9;
 }
-
-/* Colour Scheme */
-/* @media (prefers-color-scheme: light) {
-    :root {
-      color: #F6F2EC;
-      background-color: #F33D22;
-    }
-    a:hover {
-      color: #2E1E1B;
-    }
-    button {
-      color: #2E1E1B;
-      background-color: #f9f9f9;
-    }
-  } */
-
-  /* @media (prefers-color-scheme: dark) {
-    :root {
-      color: #F6F2EC;
-      background-color: #2E1E1B;
-    }
-    a:hover {
-      color: #F33D22;
-    }
-    button {
-      color: #2E1E1B;
-      background-color: #f9f9f9;
-    }
-  } */

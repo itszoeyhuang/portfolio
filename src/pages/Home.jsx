@@ -57,12 +57,11 @@ export default function Home(){
                             </div>
                         </div>
                         <Link to='/about'>
-                            <div className="btn">
-                                <div className="btn-text">
-                                    <p>About Me</p>
-                                </div>
-                                <div className="btn-wrap"></div>
-                            </div>
+                            <button className="btn">
+                                <button className="email">
+                                    <h6>About Me</h6>
+                                </button>
+                            </button>
                         </Link>
                     </div>
                 </div>
