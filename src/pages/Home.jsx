@@ -14,9 +14,9 @@ export default function Home(){
        <div className="container">
         <div className="grid">
             <div className="col-12" id="title">
-                <h2 id='mark1' >“</h2>
-                <h2>Hi! I'm Zoey!</h2>
-                <h2 id='mark2' >“</h2>
+                <h2 className='mark1' >“</h2>
+                <h2 className='hero-title'>Hi! I'm Zoey!</h2>
+                <h2 className='mark2' >“</h2>
             </div>
             <div className="container-main">
                 <div className="grid">

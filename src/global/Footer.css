@@ -1,9 +1,3 @@
 .site-footer{
     padding: 2rem 0;
 }
-
-.footer-container{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 0.5rem;
-}

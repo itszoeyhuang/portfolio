@@ -5,8 +5,12 @@
     grid-row-end: 10;
     align-items: center;
 }
+.mark1{
+    width: 20rem;
+    transform: scale(1,-1);
+}
 
-#mark2{
+.mark2{
     width: 20rem;
     transform: scale(-1,1);
 }

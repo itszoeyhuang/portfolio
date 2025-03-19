@@ -1,11 +1,75 @@
+import React from "react"
+import ProjectItemA from "../component/ProjectItemA"
+import ProjectItemB from "../component/ProjectItemB"
+
+import IntroFederal from '../assets/images/the-federal-store/intro.png'
+import DribbleFederal from '../assets/images/the-federal-store/dribble.png'
+import IntroLunchLady from '../assets/images/the-lunch-lady/intro.jpg'
+import DribbleLunchLady from '../assets/images/the-lunch-lady/dribble.jpg'
+import IntroPetApp from '../assets/images/pet-app/intro.png'
+import DribblePetApp from '../assets/images/pet-app/dribble.jpg'
+import IntroGiveWise from '../assets/images/givewise/intro.png'
+import DribbleGiveWise from '../assets/images/givewise/dribble.png'
+
+import '../global/Work.css'
+import '../main.css'
+
+
 export default function Work(){
     return(
         <>
-        <header className="work">
-            <h2>
-               This is Work Page
-            </h2>
-        </header>
+        <div className="container">
+            <div className="grid" id="hero-section" >
+                <div className="col-12" id="title">
+                    <h2 className='mark1' >“</h2>
+                    <h1 className="hero-title">PROJECTS</h1>
+                    <h2 className='mark2' >“</h2>
+                </div>
+                <div className="col-5" id="sub-title">
+                    <h5>I design, I create. Below are some of the projects during the New Media and Web Design Program at BCIT.</h5>
+                </div>
+            </div>
+            <ProjectItemA
+                order="01"
+                images={[
+                    { src: IntroFederal, alt: "The Federal Store Intro Image", id: "intro-federal"},
+                    { src: DribbleFederal, alt: "The Federal Store Dribble Image", id: "dribble-federal"}
+                ]}
+                title="Federal Store Mobile Redesign"
+                description="Refining users’ mobile ordering experience."
+                skills="Figma"
+            />
+            <ProjectItemB
+                order="02"
+                images={[
+                    { src: IntroLunchLady, alt: "The Lunch Lady Intro Image", id: "intro-lunchlady"},
+                    { src: DribbleLunchLady, alt: "The Lunch Lady Dribble Image", id: "dribble-lunchlady"}
+                ]}
+                title="The Lunch Lady Website Redesign"
+                description="Enhancing its digital presence."
+                skills={["HTML", "CSS", "Javascript"]}
+            />
+            <ProjectItemA 
+                order="03"
+                images={[
+                    { src: IntroPetApp, alt:"The Pet Dating App Intro Image", id:"intro-pet-app"},
+                    { src: DribblePetApp, alt:"The Pet Dating App Dribble Image", id:"dribble-pet-app"}
+                ]}
+                title="Pet Dating App Design"
+                description="A community where every dog finds a friend."
+                skills="Figma"
+            />
+            <ProjectItemB 
+                order="05"
+                images={[
+                    { src: DribbleGiveWise, alt:"Givewise Budgeting App Dribble Image", id:"dribble-givewise"},
+                    { src: IntroGiveWise, alt:"Givewise Budgeting App Intro Image", id:"intro-givewise"},
+                ]}
+                title="GiveWise - Budget Tracking App"
+                description="Smart budgeting, seamless giving."
+                skills={["HTML", "CSS", "React.js", "Tailwindcss"]}
+            />
+        </div>
         </>
     )
 }

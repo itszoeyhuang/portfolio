@@ -1,0 +1,88 @@
+/* Hero Section */
+#sub-title{
+    grid-column-start: 1;
+    grid-column-end: 10;
+    grid-row-start: 10;
+    grid-row-end: 12;
+    text-align: center;
+    margin: 5rem 0 12rem 16rem;
+}
+
+#hero-section{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+/* Project Section */
+.main-content{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 1rem 0;
+}
+
+.order{
+    justify-content: center;
+    padding-top: 12rem;
+    margin: 3rem;
+}
+
+.side-content{
+    display: grid;
+}
+
+.dribbleA{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 0.7rem;
+}
+
+.dribbleB{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 0.7rem;
+}
+
+.dribbleA-1 img, .dribbleA-2,
+ img{
+    width: 100%;
+    height: auto;
+    opacity: 70%;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.side-content_2{
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.project-title{
+    padding: 0.5rem 0;
+}
+
+/* Button */
+.btn-skills-container{
+    display: flex;
+    width: auto;
+    height: auto;
+    gap: 10px;
+}
+
+.btn-skills{ 
+    grid-area: button;
+    background-color: #E15F55;
+    width: auto;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    align-items: center;
+    padding: 0.8rem 1.125rem;
+    color: #2E1E1B;
+}
+
+.btn-skills p{
+    font-weight: 700;
+}
