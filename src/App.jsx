@@ -1,6 +1,5 @@
 import React from 'react'
 import { Routes, Route } from 'react-router'
-import BlobCursor from './component/BlobCursor'
 
 import PageWrap from './global/PageWrap'
 import Home from "./pages/Home"
@@ -16,7 +15,6 @@ function App() {
   // HTML
   return (
     <>
-    {/* <BlobCursor /> */}
       <Routes>
         <Route path="/" element={<PageWrap />}>
             <Route index element={<Home/>} />

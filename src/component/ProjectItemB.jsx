@@ -1,4 +1,5 @@
 import React from "react";
+import Arrow from "./Arrow";
 
 export default function ProjectItemB({order, images, title, description, skills}) {
     return(
@@ -30,6 +31,7 @@ export default function ProjectItemB({order, images, title, description, skills}
                             </div>
                         ))}
                     </div>
+                    <Arrow />
                 </div>
             </div>
         </div>

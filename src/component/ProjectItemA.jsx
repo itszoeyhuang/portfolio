@@ -1,4 +1,5 @@
 import React from "react";
+import Arrow from "./Arrow";
 
 export default function ProjectItemA({order, images, title, description, skills}) {
     return(
@@ -26,6 +27,7 @@ export default function ProjectItemA({order, images, title, description, skills}
                     <div className="btn-skills">
                         <p>{skills}</p>
                     </div>
+                    <Arrow />
                 </div>
             </div>
         </div>

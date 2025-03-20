@@ -1,6 +1,8 @@
 import React from "react"
 import ProjectItemA from "../component/ProjectItemA"
 import ProjectItemB from "../component/ProjectItemB"
+import DecryptedText from "../component/effects/DecryptedText"
+import Line from "../component/Line"
 
 import IntroFederal from '../assets/images/the-federal-store/intro.png'
 import DribbleFederal from '../assets/images/the-federal-store/dribble.png'
@@ -25,8 +27,16 @@ export default function Work(){
                     <h1 className="hero-title">PROJECTS</h1>
                     <h2 className='mark2' >“</h2>
                 </div>
-                <div className="col-5" id="sub-title">
-                    <h5>I design, I create. Below are some of the projects during the New Media and Web Design Program at BCIT.</h5>
+                <div className="sub-title">
+                    <DecryptedText 
+                        text="I design, I create. Below are some of the projects during the New Media and Web Design Program at BCIT."
+                        speed={100}
+                        maxIterations={20}
+                        characters="ABCD1234!?"
+                        className="revealed"
+                        parentClassName="all-letters"
+                        encryptedClassName="encrypted"
+                    />
                 </div>
             </div>
             <ProjectItemA
@@ -39,6 +49,7 @@ export default function Work(){
                 description="Refining users’ mobile ordering experience."
                 skills="Figma"
             />
+            <Line />
             <ProjectItemB
                 order="02"
                 images={[
@@ -49,6 +60,7 @@ export default function Work(){
                 description="Enhancing its digital presence."
                 skills={["HTML", "CSS", "Javascript"]}
             />
+            <Line />
             <ProjectItemA 
                 order="03"
                 images={[
@@ -59,6 +71,7 @@ export default function Work(){
                 description="A community where every dog finds a friend."
                 skills="Figma"
             />
+            <Line />
             <ProjectItemB 
                 order="05"
                 images={[

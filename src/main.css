@@ -15,7 +15,7 @@ h4 { font-size: 2rem 	}
 h5 { font-size: 1.5rem 	}
 h6 { 
   font-size: 1.25rem;
-  font-weight: 500; 	}
+  font-weight: 600; 	}
 p { 
   font-size: 1rem;
   font-weight: 400; 	
@@ -111,7 +111,7 @@ p {
 .light-mode{
   color: #F6F2EC;
   background-color: #F33D22;
-  background-image: url(../src//assets//images/grainy-light.png);
+  /* background-image: url(../src//assets//images/grainy-light.svg); */
 }
 
 .light-mode a:hover{
@@ -132,7 +132,7 @@ p {
 .dark-mode{
   color: #F6F2EC;
   background-color: #2E1E1B;
-  background-image: url(../src//assets//images/grainy-dark.png);
+  background-image: url(../src//assets//images/grainy-dark.svg);
 }
 
 .dark-mode a:hover{

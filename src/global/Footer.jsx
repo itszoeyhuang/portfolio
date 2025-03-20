@@ -1,30 +1,46 @@
+import Dock from "../component/Dock"
+
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa"
+import { MdOutlineEmail } from "react-icons/md";
 
 import '../main.css'
-import '../global/Footer.css'
 
 export default function Footer(){
+    const items = [
+        {
+            icon: <FaLinkedin  size={"18"}/>,
+            label: 'LinkedIn',
+            onClick: () => alert("Linkedin"),
+            onClick: () => window.open("https://www.linkedin.com/in/itszoeyhuang/")
+        },
+        {
+            icon: <FaGithub  size={"18"}/>,
+            label: 'GitHub',
+            onClick: () => alert("Github"),
+            onClick: () => window.open("https://github.com/itszoeyhuang")
+        },
+        {
+            icon: <FaInstagram  size={"18"}/>,
+            label: 'Instagram',
+            onClick: () => alert("Instagram"),
+            onClick: () => window.open("https://www.instagram.com/itszoeyhuang/")
+        },
+        {
+            icon: <MdOutlineEmail  size={"18"}/>,
+            label: 'Mail Me!',
+            onClick: () => alert("Mail Me!"),
+            onClick: () => window.open("mailto:itszoeyhuang@gmail.com")
+        },
+    ];
+
     return(
-        <>
-            <footer className="site-footer">
-                <div className="grid" id="footer-container">
-                        <div className="col-4" id="icon_linkedin">
-                            <a href="https://www.linkedin.com/in/itszoeyhuang/" target="_blank" rel="noopener noreferrer">
-                                <FaLinkedin />
-                            </a>
-                        </div>
-                        <div className="col-2" id="icon_git">
-                            <a href="https://github.com/itszoeyhuang" target="_blank" rel="noopener noreferrer">
-                                <FaGithub />
-                            </a>
-                        </div>
-                        <div className="col-1" id="icon_ig">
-                            <a href="https://www.instagram.com/itszoeyhuang/" target="_blank" rel="noopener noreferrer">
-                                <FaInstagram />
-                            </a>
-                        </div>
-                    </div>
-            </footer>
-        </>
+        <footer className="site-footer">
+            <Dock 
+                items={items}
+                panelHeight={68}
+                baseItemSize={50}
+                magnification={70}
+            />
+        </footer>
     )
 }

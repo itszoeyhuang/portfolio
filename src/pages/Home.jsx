@@ -24,36 +24,36 @@ export default function Home(){
                         <div className="v-gap">
                             <div className="v-flex">
                                 {/* Line1 */}
-                                <div className="word">
-                                    <h4>A UX/UI Designer</h4>
-                                </div>
-                                <div className="word">
-                                    <h4>inspired by</h4>
-                                </div>
+                                <span className="word">
+                                    <span>A UX/UI Designer</span>
+                                </span>
+                                <span className="word">
+                                    <span>inspired by</span>
+                                </span>
                                 <img src={ Line1 } alt='line-1-image' id='line-1-img' ></img>
-                                <h4>nature, and specialising</h4>
+                                <span>nature, and specialising</span>
 
                                 {/* Line2 */}
-                                <h4>in interactive design</h4>
+                                <span>in interactive design</span>
                                 <img src={ Line2 } alt='line-2-image' id='line-2-img'></img>
-                                <h4>and</h4>
-                                <h4>user experience</h4>
+                                <span>and</span>
+                                <span>user experience</span>
 
                                 {/* Line3 */}
-                                <h4>I'm currently based in Vancouver.</h4>
+                                <span>I'm currently based in Vancouver.</span>
                                 <img src={ Line3 } alt='line-3-image' id='line-3-img'></img>
-                                <h4>With a background in</h4>
+                                <span>With a background in</span>
                                 
                                 {/* Line4 */}
-                                <h4>fashion and marketing,</h4>
+                                <span>fashion and marketing,</span>
                                 <img src={ Line4 } alt='line-4-image' id='line-4-img'></img>
 
                                 {/* Line5 */}
-                                <div>I enjoy combining</div>
-                                <h4>high aesthetic</h4>
-                                <h4>and</h4>
-                                <h4>functionality</h4>
-                                <h4>to life.</h4>
+                                <span>I enjoy combining</span>
+                                <span>high aesthetic</span>
+                                <span>and</span>
+                                <span>functionality</span>
+                                <span>to life.</span>
                             </div>
                         </div>
                         <Link to='/about'>

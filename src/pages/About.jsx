@@ -1,3 +1,5 @@
+import DecryptedText from '../component/effects/DecryptedText'
+
 import ProfilePic from '../assets/images/profile-pic.jpg'
 
 import '../global/About.css'
@@ -6,32 +8,71 @@ export default function About(){
     return(
         <>
         <div className="container">
-            {/* Left - Title & Image */}
-            <div className="grid" id='left-part'>
-                <div className="col-6">
+            <div className="about">
+                <div className="about-left">
                     <div className="intro-line">
                         <h2 id='mark1' >“</h2>
-                        <h2>Hi! I'm Zoey!</h2>
+                        <h2>
+                            <div style={{}}>
+                                <DecryptedText
+                                text="Hi! I'm Zoey!"
+                                speed={60}
+                                maxIterations={10}
+                                characters="ABCDEFGHIJKLMNOPQRSTUV123567890!@#$%^&*()_+<>?:\]["
+                                animateOn="view"
+                                revealDirection="start"
+                                parentClassName="all-letters"
+                                encryptedClassName="encrypted"
+                                sequential="false"
+                                />
+                            </div>
+                        </h2>
                         <h2 id='mark2' >“</h2>
                     </div>
                     <img className='profile-pic' src={ ProfilePic } alt="Zoey Huang Profile Picture" id='profile' />
                 </div>
-
-                {/* Right - Introduction */}
-                <div className="grid" id='right-part'>
+                <div className="about-right">
                     <div className="col-9">
-                        <div className="col-6" id="heading">
-                            <h1>ABOUT ME</h1>
+                        <div className="heading">
+                            <h1>
+                                <div style={{}}>
+                                    <DecryptedText
+                                    text="ABOUT ME"
+                                    speed={60}
+                                    maxIterations={10}
+                                    characters="ABCDEFGHIJKLMNOPQRSTUV123567890"
+                                    animateOn="view"
+                                    revealDirection="start"
+                                    parentClassName="all-letters"
+                                    encryptedClassName="encrypted"
+                                    sequential="false"
+                                    />
+                                </div>
+                            </h1>
                         </div>
                         <div className="content">
-                            <p>Hello! Originally from Taiwan, currently based in Vancouver, B.C. I’ve always been drawn to creative aesthetics since I was a kid, which sparked my interest to design digitally and led me to pursue becoming a front-end developer.</p>
+                            <p>Hello! Originally from Taiwan, currently based in Vancouver, B.C. I have always been drawn to creative aesthetics since I was a kid, which sparked my interest to design digitally and led me to pursue becoming a front-end developer.</p>
                             <br />
                             <p>I discovered that designing and creating websites brings me a sense of peace, allowing me to immerse myself in a space that feels truly my own.</p>
                             <br />
                             <p>A indoor plant collector and crazy in love with my 15 year old Maltese. 🐶</p>
                         </div>
                         <div className="heading">
-                            <h1>EXPERIENCE</h1>
+                            <h1>
+                            <div style={{}}>
+                                <DecryptedText
+                                text="EXPERIENCE"
+                                speed={60}
+                                maxIterations={10}
+                                characters="ABCDEFGHIJKLMNOPQRSTUV123567890"
+                                animateOn="view"
+                                revealDirection="start"
+                                parentClassName="all-letters"
+                                encryptedClassName="encrypted"
+                                sequential="false"
+                                />
+                                </div>
+                            </h1>
                         </div>
                         <div className="content">
                             <p>Coming from a multicultural background, I’m fluent in English, Mandarin, and Taiwanese. My passion for creativity and fashion led me to study fashion in Melbourne, Australia, and later pursue a career in retail and merchandising over the past few years.</p>
@@ -39,7 +80,21 @@ export default function About(){
                             <p>Additionally, I gained valuable insights into consumer behaviour and visual storytelling which deepened my understanding of how aesthetics and functionality intersect.  This inspired me to focus on creating engaging user experience through tech-world.</p>
                         </div>
                         <div className="heading">
-                            <h1>TOOLKITS</h1>
+                            <h1>
+                                <div style={{}}>
+                                    <DecryptedText
+                                    text="TOOL KITS"
+                                    speed={60}
+                                    maxIterations={10}
+                                    characters="ABCDEFGHIJKLMNOPQRSTUV123567890"
+                                    animateOn="view"
+                                    revealDirection="start"
+                                    parentClassName="all-letters"
+                                    encryptedClassName="encrypted"
+                                    sequential="false"
+                                    />
+                                </div>
+                            </h1>
                         </div>
                         <div className="content">
                             <h6>Programming Language</h6> 
@@ -76,12 +131,6 @@ export default function About(){
                 </div>
             </div>
         </div>
-            {/* <button className="btn">
-                <button className="email">
-                    <a href="mailto:itszoeyhuang@gmail.com">EMAIL</a>
-                </button>
-                <button className="resume">RESUME</button>
-            </button> */}
         </>
     )
 }
