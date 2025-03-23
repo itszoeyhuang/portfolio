@@ -2,6 +2,7 @@ import DecryptedText from '../component/effects/DecryptedText'
 
 import ProfilePic from '../assets/images/profile-pic.jpg'
 
+import '../main.css'
 import '../global/About.css'
 
 export default function About(){

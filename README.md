@@ -1,8 +1,4 @@
-# React + Vite
+1. Please use "npm install" to install all the neccsary packages like framer-motion and toggle effects.
+2. Then use"npm run dev" to show the result.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is the 1st draft on my portfolio with several npm packages plug in. 

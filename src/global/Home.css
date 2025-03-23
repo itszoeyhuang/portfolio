@@ -1,35 +1,55 @@
-#title{
-    grid-column-start: 5;
-    grid-column-end: six;
-    grid-row-start: 7;
-    grid-row-end: 10;
+.container-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 7rem;
 }
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 20rem;
+}
+
 .mark1{
+    align-items: center;
     width: 20rem;
     transform: scale(1,-1);
+    position:absolute;
+    margin-left: -50px;
+    margin-bottom: -50px;
 }
 
 .mark2{
     width: 20rem;
     transform: scale(-1,1);
+    position:absolute;
+    margin-right: -50px;
+    margin-top: -50px;
 }
 
-/* Hero Intro */
-.container-main{
-    grid-column-start: 2;
-    grid-column-end: five;
+.hero-intro{
+    display: inline;
 }
 
-#hero-intro{
-    grid-column-start: 3;
-    grid-column-start: ten;
-    grid-row-start: 10;
-    grid-row-end: 5;
+.intro-line{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    gap: 10px;
 }
 
+.emphasis{
+    font-family: "FONTSPRING DEMO - Integral CF Bold";
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
 
-/* Button - About Me */
 .btn{
     background-color: #F6F2EC;
     border-radius: 15px;
@@ -38,6 +58,7 @@
     align-items: center;
     width: 10rem;
     height: 2rem;
+    margin-bottom: 5rem;
 }
 
 .btn-text{

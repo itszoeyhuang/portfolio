@@ -25,7 +25,7 @@ export default function Header(){
                         <ul>
                             <Link to="/about" >about</Link>
                             <Link to="/work" >work</Link>
-                            <Link to="/contact" >contact</Link>
+                            {/* <Link to="/contact" >contact</Link> */}
                             <ThemeToggle />
                         </ul>
                     </div>

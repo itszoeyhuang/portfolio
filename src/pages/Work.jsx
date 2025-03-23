@@ -22,21 +22,23 @@ export default function Work(){
         <>
         <div className="container">
             <div className="grid" id="hero-section" >
-                <div className="col-12" id="title">
+                {/* <div className="col-12" id="title">
                     <h2 className='mark1' >“</h2>
                     <h1 className="hero-title">PROJECTS</h1>
                     <h2 className='mark2' >“</h2>
-                </div>
+                </div> */}
                 <div className="sub-title">
-                    <DecryptedText 
-                        text="I design, I create. Below are some of the projects during the New Media and Web Design Program at BCIT."
-                        speed={100}
-                        maxIterations={20}
-                        characters="ABCD1234!?"
-                        className="revealed"
-                        parentClassName="all-letters"
-                        encryptedClassName="encrypted"
-                    />
+                    <h4>
+                        <DecryptedText 
+                            text="I design, I create. Below are some of the projects during the New Media and Web Design Program at BCIT."
+                            speed={100}
+                            maxIterations={20}
+                            characters="ABCD1234!?"
+                            className="revealed"
+                            parentClassName="all-letters"
+                            encryptedClassName="encrypted"
+                        />
+                    </h4>
                 </div>
             </div>
             <ProjectItemA
