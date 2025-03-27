@@ -53,7 +53,7 @@ export default function Work(){
                 skills="Figma"
                 url="/federal-store-redesign"
             />
-            <Line />
+            <Line width={1257} color="#F6F2EC" />
             <ProjectItemB
                 order="02"
                 images={[
@@ -64,7 +64,7 @@ export default function Work(){
                 description="Enhancing its digital presence."
                 skills={["HTML", "CSS", "Javascript"]}
             />
-            <Line />
+            <Line width={1257} color="#F6F2EC" />
             <ProjectItemA 
                 order="03"
                 images={[
@@ -75,7 +75,7 @@ export default function Work(){
                 description="A community where every dog finds a friend."
                 skills="Figma"
             />
-            <Line />
+            <Line width={1257} color="#F6F2EC" />
             <ProjectItemB 
                 order="05"
                 images={[

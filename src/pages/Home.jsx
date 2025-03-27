@@ -14,7 +14,7 @@ import '../global/Home.css'
 import '../main.css'
 
 const demoItems = [
-    { link: '#', text: 'Federal Store Redesign', image: DribbleFederal },
+    { link: '/federal-store-redesign', text: 'Federal Store Redesign', image: DribbleFederal },
     { link: '#', text: 'Lunch Lady Redesign', image: IntroLunchLady },
     { link: '#', text: 'Pet Dating App', image: DribblePetApp },
     { link: '#', text: 'GiveWise - Budget Tracking App', image: DribbleGiveWise }
