@@ -1,12 +1,24 @@
 import React from 'react'
+import FlowingMenu from '../component/FlowingMenu'
 import { Link } from 'react-router'
 import Line1 from '../assets/images/line-1.jpeg'
 import Line2 from '../assets/images/line-2.jpeg'
 import Line3 from '../assets/images/line-3.jpeg'
 import Line4 from '../assets/images/line-4.jpeg'
+import DribbleFederal from '../assets/images/the-federal-store/dribble.png'
+import IntroLunchLady from '../assets/images/the-lunch-lady/intro.jpg'
+import DribblePetApp from '../assets/images/pet-app/dribble.jpg'
+import DribbleGiveWise from '../assets/images/givewise/dribble.png'
 
 import '../global/Home.css'
 import '../main.css'
+
+const demoItems = [
+    { link: '#', text: 'Federal Store Redesign', image: DribbleFederal },
+    { link: '#', text: 'Lunch Lady Redesign', image: IntroLunchLady },
+    { link: '#', text: 'Pet Dating App', image: DribblePetApp },
+    { link: '#', text: 'GiveWise - Budget Tracking App', image: DribbleGiveWise }
+  ];
 
 export default function Home(){
     return(
@@ -54,6 +66,12 @@ export default function Home(){
                         </button>
                     </button>
                 </Link>
+            </div>
+        </div>
+        <div className="project">
+            <h1 className='project-title'>PROJECTS</h1>
+            <div className='flowing-menu'style={{ height: '600px', position: 'relative' }}>
+            <FlowingMenu items={demoItems} />
             </div>
         </div>
     </div>

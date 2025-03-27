@@ -65,4 +65,9 @@
     color: #2E1E1B;
 }
 
+/* Projects */
+.project{
+    padding: 4rem 0;
+    gap: 1rem;
+}
 

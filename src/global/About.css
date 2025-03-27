@@ -2,6 +2,14 @@
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 15px;
+    padding-top: 4rem;
+}
+
+.about-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 15rem;
 }
 
 .profile-pic{
@@ -19,5 +27,4 @@
 .about-btn{
     display: flex;
     gap: 10px;
-    padding-bottom: 10rem;
 }

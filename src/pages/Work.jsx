@@ -41,6 +41,7 @@ export default function Work(){
                     </h4>
                 </div>
             </div>
+            <div className="project-overview">
             <ProjectItemA
                 order="01"
                 images={[
@@ -50,6 +51,7 @@ export default function Work(){
                 title="Federal Store Mobile Redesign"
                 description="Refining users’ mobile ordering experience."
                 skills="Figma"
+                url="/federal-store-redesign"
             />
             <Line />
             <ProjectItemB
@@ -84,6 +86,7 @@ export default function Work(){
                 description="Smart budgeting, seamless giving."
                 skills={["HTML", "CSS", "React.js", "Tailwindcss"]}
             />
+            </div>
         </div>
         </>
     )
