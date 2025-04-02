@@ -51,7 +51,7 @@ export default function Work(){
                 title="Federal Store Mobile Redesign"
                 description="Refining users’ mobile ordering experience."
                 skills="Figma"
-                url="/federal-store-redesign"
+                url="/work/federal-store-redesign"
             />
             <Line width={1257} color="#F6F2EC" />
             <ProjectItemB
@@ -63,6 +63,7 @@ export default function Work(){
                 title="The Lunch Lady Website Redesign"
                 description="Enhancing its digital presence."
                 skills={["HTML", "CSS", "Javascript"]}
+                url="/work/the-lunch-lady"
             />
             <Line width={1257} color="#F6F2EC" />
             <ProjectItemA 
@@ -74,6 +75,7 @@ export default function Work(){
                 title="Pet Dating App Design"
                 description="A community where every dog finds a friend."
                 skills="Figma"
+                url="/work//work/pet-app"
             />
             <Line width={1257} color="#F6F2EC" />
             <ProjectItemB 
@@ -85,6 +87,8 @@ export default function Work(){
                 title="GiveWise - Budget Tracking App"
                 description="Smart budgeting, seamless giving."
                 skills={["HTML", "CSS", "React.js", "Tailwindcss"]}
+                url="/work/givewise"
+                
             />
             </div>
         </div>

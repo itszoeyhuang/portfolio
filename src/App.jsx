@@ -8,6 +8,9 @@ import Work from './pages/Work'
 import Contact from './pages/Contact'
 import StyleGuide from './pages/StyleGuide'
 import FederalStore from './pages/projects/FederalStore'
+import LunchLady from './pages/projects/LunchLady'
+import PetApp from './pages/projects/PetApp'
+import GiveWise from './pages/projects/GiveWise'
 
 function App() {
 
@@ -23,7 +26,10 @@ function App() {
             <Route path="/work" element={(<Work />)} />
             <Route path="/contact" element={(<Contact />)} />
             <Route path='/styleguide' element={(<StyleGuide />)} />
-            <Route path="/federal-store-redesign" element={(<FederalStore />)} />
+            <Route path="/work/federal-store-redesign" element={(<FederalStore />)} />
+            <Route path="/work/the-lunch-lady" element={(<LunchLady />)} />
+            <Route path="/work/pet-app" element={(<PetApp />)} />
+            <Route path="/work/givewise" element={(<GiveWise />)} />
         </Route>
       </Routes>
     </>

@@ -1,16 +1,18 @@
 import React from "react";
+import Line from "../Line";
 
-import '../project/Content.css'
+import '../project/TextBlock.css'
 
-export default function Content({ heading, content}){
+export default function TextBlock({heading, content}){
     return(
         <>
             <div className="container">
-                <div className="intro">
-                    <div className="intro_heading">
+                <div className="challenge">
+                    <div className="challenge_heading">
                         <h5>{heading}</h5>
                     </div>
-                    <div className="intro_content">
+                    <Line className="line" width={400} color="#F6F2EC" />
+                    <div className="challenge_content">
                         {Array.isArray(content) ? (
                             content.map((paragraph, index) => <p key={index}>{paragraph}</p>)
                             ) : (

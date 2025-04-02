@@ -1,6 +1,6 @@
 .intro{
-    width: 60rem;
-    height: auto;
+    width: auto;
+    height: 30rem;
     display:flex;
     flex-direction: column;
     gap: 1rem;

@@ -1,0 +1,7 @@
+.challenge{
+    width: auto;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
