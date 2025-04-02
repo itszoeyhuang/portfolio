@@ -6,7 +6,7 @@ import '../project/TextBlock.css'
 export default function TextBlock({heading, content}){
     return(
         <>
-            <div className="container">
+            <div className="container" id="challenge-container">
                 <div className="challenge">
                     <div className="challenge_heading">
                         <h5>{heading}</h5>
