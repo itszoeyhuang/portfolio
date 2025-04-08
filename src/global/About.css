@@ -19,6 +19,13 @@
     opacity: 70% ;
     border-radius: 10px;
 }
+.mobile-only{
+    display: none;
+}
+
+.mobile-only_content{
+    display: none;
+}
 
 .content{
     margin-top: 10px;
@@ -27,4 +34,33 @@
 .about-btn{
     display: flex;
     gap: 10px;
+}
+
+@media screen and (max-width: 576px){
+    .about{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .intro-line{
+        display: none;
+    }
+    .about-left{
+        padding: 0;
+    }
+    .mobile-only{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding-top: 10px;
+    }
+    .mobile-only_content{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        gap: 60px;
+    }
+    .about-btn{
+        display: none;
+    }
 }

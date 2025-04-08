@@ -14,10 +14,10 @@ import '../global/Home.css'
 import '../main.css'
 
 const demoItems = [
-    { link: '/federal-store-redesign', text: 'Federal Store Redesign', image: DribbleFederal },
-    { link: '#', text: 'Lunch Lady Redesign', image: IntroLunchLady },
-    { link: '#', text: 'Pet Dating App', image: DribblePetApp },
-    { link: '#', text: 'GiveWise - Budget Tracking App', image: DribbleGiveWise }
+    { link: '/work/federal-store-redesign', text: 'Federal Store Redesign', image: DribbleFederal },
+    { link: '/work/the-lunch-lady', text: 'Lunch Lady Redesign', image: IntroLunchLady },
+    { link: '/work/pet-app', text: 'Pet Dating App', image: DribblePetApp },
+    { link: '/work/givewise', text: 'GiveWise - Budget Tracking App', image: DribbleGiveWise }
   ];
 
 export default function Home(){
@@ -26,9 +26,9 @@ export default function Home(){
        <div className="container">
         <div className="container-main">
             <div className="title">
-                <h2 className="mark1">"</h2>
-                <h2 className='title-hero'>Hi! I'm Zoey!</h2>
-                <h2 className="mark2">"</h2>
+                <h3 className="mark1">"</h3>
+                <h3 className='title-hero'>Hi! I'm Zoey!</h3>
+                <h3 className="mark2">"</h3>
             </div>
             <div className="hero-intro">
                 <div className="intro-line">

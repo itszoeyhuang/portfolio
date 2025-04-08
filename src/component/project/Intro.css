@@ -5,10 +5,10 @@
 
 /* Left Text */
 .project_text{
-    width: 90%;
+    width: auto;
+    height: auto;
     display: flex;
     flex-direction: column;
-    margin-right: 2rem;
 }
 
 .intro_title h1{
@@ -28,6 +28,10 @@
     margin-bottom: 4.5rem;
 }
 
+.intro_solution{
+    padding-bottom: 3rem;
+}
+
 .line-container{
     margin-bottom: 2.2rem;
 }
@@ -38,4 +42,20 @@
     height: 50rem;
     object-fit: cover;
     flex-shrink: 0;
+}
+
+@media screen and (max-width: 576px){
+    .project-intro{
+        display: flex;
+        flex-direction: column;
+    }
+    .intro-title h1{
+        width: 10px;
+        height: auto;
+    }
+    .project-dribble{
+        width: auto;
+        height: 35rem;
+        object-fit: cover;
+    }
 }

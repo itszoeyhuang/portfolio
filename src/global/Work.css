@@ -14,6 +14,10 @@
     align-content: center;
 }
 
+#title_mobile-display{
+    display: none;
+}
+
 /* Project Section */
 .project-overview{
     padding-bottom: 5rem;
@@ -46,12 +50,22 @@
     gap: 0.7rem;
 }
 
-.dribbleA-1, .dribbleA-2, .dribbleB-1, .dribbleB-2 img{
+.dribbleA-1 img, 
+.dribbleA-2 img,
+.dribbleB-1 img,
+.dribbleB-2 img{
     width: 100%;
     height: auto;
     opacity: 70%;
     object-fit: cover;
     flex-shrink: 0;
+}
+
+.dribbleA-1 img:hover, 
+.dribbleA-2 img:hover,
+.dribbleB-1 img:hover,
+.dribbleB-2 img:hover {
+    transition: opacity 100% 0.3s ease;
 }
 
 #dribble-lunchlady, #intro-pet-app{
@@ -91,4 +105,34 @@
 
 .btn-skills p{
     font-weight: 700;
+}
+
+@media screen and (max-width: 576px) {
+    .sub-title, .order, .project-title p, .btn-skills{
+        display: none;
+    }
+    #dribble-federal, #dribble-lunchlady, #intro-pet-app, #dribble-givewise{
+        aspect-ratio: 1 / 1;
+        width: 100%;
+        display: block;
+        object-fit: cover;
+        grid-column: span 2;
+    }
+    #intro-federal, #intro-lunchlady, #dribble-pet-app, #intro-givewise, .mark1, .mark2{
+        display: none;
+    }
+    .dribbleA, .dribbleB{
+        grid-template-columns: 1fr;
+    }
+    .line{
+        width: 100%;
+    }
+    #hero-section{
+        display: flex;
+        justify-content: center;
+    }
+    #title_mobile-display{
+        display: flex;
+        padding: 2rem 0;
+    }
 }
