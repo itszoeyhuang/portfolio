@@ -1,4 +1,5 @@
 import React from 'react'
+import { Fade, Slide } from "react-awesome-reveal"
 import FlowingMenu from '../component/FlowingMenu'
 import { Link } from 'react-router'
 import Line1 from '../assets/images/line-1.jpeg'
@@ -31,34 +32,40 @@ export default function Home(){
                 <h3 className="mark2">"</h3>
             </div>
             <div className="hero-intro">
-                <div className="intro-line">
-                    <span className='emphasis'><h6>A UX UI Designer</h6></span>
-                    <span><h6>inspired by</h6></span>
-                    <img src={ Line1 } alt='line-1-image' id='line-1-img' ></img>
-                    <span><h6>nature, and specialising</h6></span>
-                </div>
-                <div className="intro-line">
-                    <span><h6>in interactive design</h6></span>
-                    <img src={ Line2 } alt='line-2-image' id='line-2-img'></img>
-                    <span><h6>and</h6></span>
-                    <span className='emphasis'><h6>user experience</h6></span>
-                </div>
-                <div className="intro-line">
-                    <span><h6>I'm currently based in Vancouver.</h6></span>
-                    <img src={ Line3 } alt='line-3-image' id='line-3-img'></img>
-                    <span><h6>With a background in</h6></span>
-                </div>
-                <div className="intro-line">
-                    <span><h6>fashion and marketing,</h6></span>
-                    <img src={ Line4 } alt='line-4-image' id='line-4-img'></img>
-                </div>
-                <div className="intro-line">
-                    <span><h6>I enjoy combining</h6></span>
-                    <span className='emphasis'><h6>high aesthetic</h6></span>
-                    <span><h6>and</h6></span>
-                    <span className='emphasis'><h6>functionality</h6></span>
-                    <span><h6>to life.</h6></span>
-                </div>
+                <Slide 
+                    direction='left' 
+                    cascade
+                    duration={1000}
+                >
+                    <div className="intro-line">
+                        <span className='emphasis'><h6>A UX UI Designer</h6></span>
+                        <span><h6>inspired by</h6></span>
+                        <img src={ Line1 } alt='line-1-image' id='line-1-img' ></img>
+                        <span><h6>nature, and specialising</h6></span>
+                    </div>
+                    <div className="intro-line">
+                        <span><h6>in interactive design</h6></span>
+                        <img src={ Line2 } alt='line-2-image' id='line-2-img'></img>
+                        <span><h6>and</h6></span>
+                        <span className='emphasis'><h6>user experience</h6></span>
+                    </div>
+                    <div className="intro-line">
+                        <span><h6>I'm currently based in Vancouver.</h6></span>
+                        <img src={ Line3 } alt='line-3-image' id='line-3-img'></img>
+                        <span><h6>With a background in</h6></span>
+                    </div>
+                    <div className="intro-line">
+                        <span><h6>fashion and marketing,</h6></span>
+                        <img src={ Line4 } alt='line-4-image' id='line-4-img'></img>
+                    </div>
+                    <div className="intro-line">
+                        <span><h6>I enjoy combining</h6></span>
+                        <span className='emphasis'><h6>high aesthetic</h6></span>
+                        <span><h6>and</h6></span>
+                        <span className='emphasis'><h6>functionality</h6></span>
+                        <span><h6>to life.</h6></span>
+                    </div>
+                </Slide>
                 <Link to='/about'>
                     <button className="btn">
                         <button className="email">
