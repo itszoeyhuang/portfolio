@@ -1,5 +1,5 @@
 import DecryptedText from '../component/effects/DecryptedText'
-
+import Line from '../component/Line'
 import ProfilePic from '../assets/images/profile-pic.jpg'
 
 import '../main.css'
@@ -31,6 +31,18 @@ export default function About(){
                         <h2 id='mark2' >“</h2>
                     </div>
                     <img className='profile-pic' src={ ProfilePic } alt="Zoey Huang Profile Picture" id='profile' />
+                </div>
+                <div className="mobile-only">
+                    <Line width={500} color="#F6F2EC" />
+                        <div className="mobile-only_content">
+                            <a href="mailto:itszoeyhuang@gmail.com">
+                                <h6>EMAIL</h6>
+                            </a>
+                            <a href="https://drive.google.com/file/d/1cnI12W-kf_K7r_cZZ3B5WXGCy2FOweV-/view?usp=sharing">
+                                <h6>RESUME</h6>
+                            </a>
+                        </div>
+                    <Line width={500} color="#F6F2EC" />
                 </div>
                 <div className="about-right">
                     <div className="col-9">

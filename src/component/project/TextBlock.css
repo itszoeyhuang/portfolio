@@ -1,7 +1,13 @@
 .challenge{
-    width: auto;
-    height: 25rem;
+    width: 50rem;
+    height: auto;
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    gap: 1.2rem;
+    margin-bottom: 6rem;
+}
+
+#challenge-container{
+    display: flex;
+    justify-content: center;
 }

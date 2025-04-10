@@ -1,8 +1,20 @@
 .intro{
-    width: auto;
-    height: 30rem;
+    width: 52rem;
+    height: auto;
     display:flex;
     flex-direction: column;
     gap: 1rem;
-    margin: 8rem auto;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+}
+
+#intro-container{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 576px){
+    .intro{
+        margin: 3rem 1rem;
+    }
 }

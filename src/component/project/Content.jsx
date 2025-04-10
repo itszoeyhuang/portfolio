@@ -5,7 +5,7 @@ import '../project/Content.css'
 export default function Content({ heading, content}){
     return(
         <>
-            <div className="container">
+            <div className="container" id="intro-container">
                 <div className="intro">
                     <div className="intro_heading">
                         <h5>{heading}</h5>

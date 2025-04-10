@@ -1,10 +1,13 @@
 import React from "react";
+import { Link } from 'react-router'
 
 import Intro from "../../component/project/Intro";
 import Content from "../../component/project/Content";
 import Wireframes from "../../component/project/Wireframes";
 import TextBlock from "../../component/project/TextBlock";
 import Upcoming from "../../component/project/Upcoming";
+import Line from "../../component/Line";
+
 
 import '../projects/FederalStore.css'
 
@@ -93,6 +96,14 @@ export default function FederalStore(){
                         },
                     ]}
                 />
+                <div className="mobile-only">
+                    <Line width={500} color="#F6F2EC" />
+                        <div className="mobile-only_content">
+                            <Link to="/work">Back To Work</Link>
+                            <Link to="/work/the-lunch-lady">Lunch Lady Redesign</Link>
+                        </div>
+                    <Line width={500} color="#F6F2EC" />
+                </div>
         </>
     )
 }

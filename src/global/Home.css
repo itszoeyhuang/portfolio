@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 7rem;
+    gap: 6rem;
 }
 
 .title{
@@ -12,6 +12,7 @@
     justify-content: center;
     position: relative;
     width: 20rem;
+    padding-top: 3rem;
 }
 
 .mark1{
@@ -32,7 +33,7 @@
 }
 
 .hero-intro{
-    display: inline;
+    padding-top: 3rem;
 }
 
 .intro-line{
@@ -67,7 +68,22 @@
 
 /* Projects */
 .project{
+    margin: 0 1rem;
     padding: 4rem 0;
     gap: 1rem;
 }
 
+@media screen and (max-width: 576px){
+    .title{
+        padding-top: 5rem;
+    }
+    .hero-intro{
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+        max-width: 90%;
+        margin: auto;
+        padding: 1.5rem;
+    }
+}

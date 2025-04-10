@@ -9,3 +9,9 @@
     width: auto;
     height: auto;
 }
+
+@media screen and (max-width: 576px){
+    .projects-grid{
+        display: none;
+    }
+}

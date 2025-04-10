@@ -22,11 +22,11 @@ export default function Work(){
         <>
         <div className="container">
             <div className="grid" id="hero-section" >
-                {/* <div className="col-12" id="title">
+                <div className="project-title" id="title_mobile-display" >
                     <h2 className='mark1' >“</h2>
                     <h1 className="hero-title">PROJECTS</h1>
                     <h2 className='mark2' >“</h2>
-                </div> */}
+                </div>
                 <div className="sub-title">
                     <h4>
                         <DecryptedText 
@@ -53,7 +53,9 @@ export default function Work(){
                 skills="Figma"
                 url="/work/federal-store-redesign"
             />
-            <Line width={1257} color="#F6F2EC" />
+            <div className="line">
+                <Line color="#F6F2EC" />
+            </div>
             <ProjectItemB
                 order="02"
                 images={[
