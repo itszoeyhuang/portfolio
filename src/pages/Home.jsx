@@ -2,6 +2,8 @@ import React from 'react'
 import { Fade, Slide } from "react-awesome-reveal"
 import FlowingMenu from '../component/FlowingMenu'
 import { Link } from 'react-router'
+import GradientBackground from '../component/GradientBackground'
+
 import Line1 from '../assets/images/line-1.jpeg'
 import Line2 from '../assets/images/line-2.jpeg'
 import Line3 from '../assets/images/line-3.jpeg'
@@ -23,16 +25,17 @@ const demoItems = [
 
 export default function Home(){
     return(
-       <>
+    <>
+    <GradientBackground />
        <div className="container">
         <div className="container-main">
-            <div className="title">
+            {/* <div className="title">
                 <h3 className="mark1">"</h3>
                 <h3 className='title-hero'>Hi! I'm Zoey!</h3>
                 <h3 className="mark2">"</h3>
-            </div>
+            </div> */}
             <div className="hero-intro">
-                <Slide 
+                <Fade 
                     direction='left' 
                     cascade
                     duration={1000}
@@ -65,7 +68,7 @@ export default function Home(){
                         <span className='emphasis'><h6>functionality</h6></span>
                         <span><h6>to life.</h6></span>
                     </div>
-                </Slide>
+                </Fade>
                 <Link to='/about'>
                     <button className="btn">
                         <button className="email">
@@ -75,13 +78,13 @@ export default function Home(){
                 </Link>
             </div>
         </div>
-        <div className="project">
+    </div>
+    <div className="project">
             <h1 className='project-title'>PROJECTS</h1>
             <div className='flowing-menu'style={{ height: '600px', position: 'relative' }}>
             <FlowingMenu items={demoItems} />
             </div>
         </div>
-    </div>
     </>
     )
 }

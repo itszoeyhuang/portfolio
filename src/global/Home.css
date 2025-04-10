@@ -32,13 +32,9 @@
     margin-top: -50px;
 }
 
-/* .hero-intro{
-    display: grid;
-    grid-template-columns: 3;
-    width: 30rem;
-    height: auto;
-
-} */
+.hero-intro{
+    padding-top: 3rem;
+}
 
 .intro-line{
     display: flex;
@@ -72,6 +68,7 @@
 
 /* Projects */
 .project{
+    margin: 0 1rem;
     padding: 4rem 0;
     gap: 1rem;
 }
