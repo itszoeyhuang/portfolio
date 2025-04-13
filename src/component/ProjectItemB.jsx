@@ -1,7 +1,7 @@
 import React from "react";
 import Arrow from "./Arrow";
 
-export default function ProjectItemB({order, images, title, description, skills}) {
+export default function ProjectItemB({order, images, title, description, skills, url}) {
     return(
         <div className="main-content">
             <div className="order">
@@ -31,7 +31,7 @@ export default function ProjectItemB({order, images, title, description, skills}
                             </div>
                         ))}
                     </div>
-                    <Arrow />
+                    <Arrow pathTo={url} />
                 </div>
             </div>
         </div>

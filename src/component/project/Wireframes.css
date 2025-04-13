@@ -5,6 +5,7 @@
     height: 29rem;
     object-fit: cover;
     margin: 0 auto;
+    gap: 1rem;
 }
 
 @media screen and (max-width: 576px){
@@ -15,5 +16,6 @@
         display: flex;
         width: auto;
         height: auto;
+        padding: 1rem 0;
     }
 }

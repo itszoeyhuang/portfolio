@@ -77,7 +77,7 @@ export default function Work(){
                 title="Pet Dating App Design"
                 description="A community where every dog finds a friend."
                 skills="Figma"
-                url="/work//work/pet-app"
+                url="/work/pet-app"
             />
             <Line width={1257} color="#F6F2EC" />
             <ProjectItemB 

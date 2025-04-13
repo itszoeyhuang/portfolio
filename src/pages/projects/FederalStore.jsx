@@ -8,9 +8,6 @@ import TextBlock from "../../component/project/TextBlock";
 import Upcoming from "../../component/project/Upcoming";
 import Line from "../../component/Line";
 
-
-import '../projects/FederalStore.css'
-
 import DribbleFederal from '../../assets/images/the-federal-store/dribble.png'
 import FederalWireframe1 from '../../assets/images/the-federal-store/wireframe1.jpg'
 import FederalWireframe2 from '../../assets/images/the-federal-store/wireframe2.jpg'
@@ -74,36 +71,36 @@ export default function FederalStore(){
                     ]}
                 />
             </div>
-                <Upcoming 
-                    projects={[
-                        {
-                            img:{
-                                src: IntroLunchLady, 
-                                alt:"The Lunch Lady Intro Image", id:"intro-lunchlady"
-                            },
-                            subtitle:"The Lunch Lady Website Redesign",
-                            content:"Hello! Originally from Taiwan, currently based in Vancouver, B.C. ",
-                            path:"/work/the-lunch-lady"
+            <Upcoming 
+                projects={[
+                    {
+                        img:{
+                            src: IntroLunchLady, 
+                            alt:"The Lunch Lady Intro Image", id:"intro-lunchlady"
                         },
-                        {
-                            img:{
-                                src: DribblePetApp, 
-                                alt:"The Pet Dating App Dribble Image", id:"dribble-petdating"
-                            },
-                            subtitle:"Pet Dating App",
-                            content:"Hello! Originally from Taiwan, currently based in Vancouver, B.C. ",
-                            path:"/work/pet-app"
+                        subtitle:"The Lunch Lady Website Redesign",
+                        content:"Enhancing its digital presence.",
+                        path:"/work/the-lunch-lady"
+                    },
+                    {
+                        img:{
+                            src: DribblePetApp, 
+                            alt:"The Pet Dating App Dribble Image", id:"dribble-petdating"
                         },
-                    ]}
-                />
-                <div className="mobile-only">
-                    <Line width={500} color="#F6F2EC" />
-                        <div className="mobile-only_content">
-                            <Link to="/work">Back To Work</Link>
-                            <Link to="/work/the-lunch-lady">Lunch Lady Redesign</Link>
-                        </div>
-                    <Line width={500} color="#F6F2EC" />
-                </div>
+                        subtitle:"Pet Dating App",
+                        content:"A community where every dog finds a friend.",
+                        path:"/work/pet-app"
+                    },
+                ]}
+            />
+            <div className="mobile-only">
+                <Line width={500} color="#F6F2EC" />
+                    <div className="mobile-only_content">
+                        <Link to="/work">Back To Work</Link>
+                        <Link to="/work/the-lunch-lady">Lunch Lady Redesign</Link>
+                    </div>
+                <Line width={500} color="#F6F2EC" />
+            </div>
         </>
     )
 }

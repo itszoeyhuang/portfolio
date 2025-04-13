@@ -24,14 +24,14 @@ export default function Intro({ title, subtitle, content, listTitle, listItems, 
                         )}
                     </div>
                     <div className="intro_solution">
-                            <h6>{listTitle}</h6>
-                            <ul>
-                                {listItems.map((item, index) => (
-                                    <li key={index}>
-                                        <p>{item}</p>
-                                    </li>
-                                ))}
-                            </ul>
+                        <h6>{listTitle}</h6>
+                        <ul>
+                            {listItems.map((item, index) => (
+                                <li key={index}>
+                                    <p>{item}</p>
+                                </li>
+                            ))}
+                        </ul>
                     </div>
                 </div>
                 <div className="project-dribble">
